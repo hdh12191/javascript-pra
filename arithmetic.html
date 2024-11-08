@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arithmetic Operators</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      select {
+        margin-bottom: 20px;
+      }
+      div.input-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      div.input-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div.input-box input {
+        margin-left: 20px;
+      }
+
+      div.result-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div button.result-btn {
+        width: 70px;
+        height: 20px;
+      }
+      div h2 {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Arithmetic Operator</h1>
+    <select name="arithmetic" id="arithmeticOperator">
+      <option value="add">ADD</option>
+      <option value="minus">MINUS</option>
+      <option value="multiply">MULTIPLY</option>
+      <option value="divide">DIVIDE</option>
+      <option value="remain">REMAIN</option>
+    </select>
+    <div class="input-container">
+      <div class="input-box">
+        <p>첫번째 값을 입력해주세요.</p>
+        <input id="firstValue" type="number" />
+      </div>
+      <div class="input-box">
+        <p>두번째 값을 입력해주세요.</p>
+        <input id="secondValue" type="number" />
+      </div>
+    </div>
+    <div class="result-box">
+      <button class="result-btn" onclick="arithmetic()">Result</button>
+      <h2 class="result">값을 입력하고 Result 버튼을 눌러주세요.</h2>
+    </div>
+
+    <script src="arithmetic.js"></script>
+  </body>
+</html>
